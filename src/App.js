@@ -3,24 +3,24 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
-      <Friend></Friend>
+      <Person name="Rigan"></Person>
+      <Person name="Afridi"></Person>
+      <Friend name="Akram"></Friend>
     </div>
   );
 }
-function Person() {
+function Person(props) {
   return (
     <div className="container">
-      <h1>Afridi</h1>
+      <h1>Name : {props.name}</h1>
       <p>Profession : Cricketer</p>
     </div>
   );
 }
-function Friend() {
+function Friend(props) {
   return (
     <div className="container">
-      <h3>Name: Rigan</h3>
+      <h1>Name: {props.name}</h1>
       <p>Job: Maramari</p>
     </div>
   );
